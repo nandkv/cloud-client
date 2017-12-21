@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: email
+  cloud:
+    config:
+      uri:  ${defaultUri:http://localhost:8888}
+      label: master
+      username: user
+      password: pass
+      
+management: 
+  security:
+    enabled: false
+    
